@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #455763;
+    overflow-x: hidden;
+    /* prevent horizontal scroll */
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+h2 {
+    font-family: "Beiruti", sans-serif;
+    font-weight: 700;
+    font-size: 35pt;
+
+}
+
+.wrapper {
+    width: 500px;
+    height: 500px;
+    box-shadow: 1px 1px 10px 1px #E8E2DA;
+    border: 2px solid rgb(138, 138, 138);
+    background-color: rgba(255, 255, 255, 0.2);
+    /* شفافیت */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 40% 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper .inputbox {
+    width: 100%;
+    height: 45px;
+    margin: 5px 0;
+    position: relative;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 100%;
+    border: #d6c9b4 1px solid;
+    outline: #d6c9b4 solid;
+    border-radius: 50px;
+    padding-right: 30px;
+}
+
+.inputbox input::placeholder {
+    color: rgb(138, 138, 138);
+    direction: rtl;
+    text-align: right;
+    font-family: 'Marhey', sans-serif;
+
+    padding: 20px;
+}
+
+span,
+u {
+    font-family: 'Marhey', sans-serif;
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+.inputbox input:focus::placeholder {
+    color: transparent;
+}
+
+.inputbox input:focus {
+    padding-right: 30px;
+    /* مقدار دلخواه */
+}
+
+.inputbox i {
+    position: absolute;
+    left: 15px;
+    transform: translateY(29%);
+    font-size: 20px;
+}
+
+form {
+    width: 70%;
+    height: auto;
+    gap: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#submit {
+    display: block;
+    margin: 0 auto;
+    font-family: 'Marhey', sans-serif;
+    font-size: 13pt;
+    box-shadow: 1px 1px 10px 1px #E8E2DA;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.remember input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #b0b0b0;
+    border-radius: 5px;
+    background: #f3f3f3;
+    cursor: pointer;
+    position: relative;
+
+
+}
+
+label {
+    font-family: "Beiruti", sans-serif;
+    font-weight: 700;
+    font-size: 15pt;
+}
+
+.remember input[type="checkbox"]:checked {
+    background: #24344d;
+    border-color: #24344d;
+}
+
+.remember input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    width: 6px;
+    height: 12px;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    transform: rotate(45deg);
+}
+
+/* start responsive in mobile device */
+@media screen and (max-width:576px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #455763;
+        overflow-x: hidden;
+        /* prevent horizontal scroll */
+        direction: rtl;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    h2 {
+        font-family: "Beiruti", sans-serif;
+        font-weight: 700;
+        font-size: 22pt;
+    }
+
+    .wrapper {
+        width: 330px;
+        height: 350px;
+        box-shadow: 1px 1px 10px 1px #E8E2DA;
+        border: 2px solid rgb(138, 138, 138);
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-radius: 40% 20px 20px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .wrapper .inputbox {
+        width: 100%;
+        height: 35px;
+        position: relative;
+    }
+
+    form {
+        width: 70%;
+        height: auto;
+        gap: 15px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inputbox input {
+        width: 100%;
+        height: 100%;
+        border: #d6c9b4 1px solid;
+        outline: #d6c9b4 solid;
+        border-radius: 50px;
+        padding-right: 15px;
+    }
+
+    .inputbox input::placeholder {
+        color: rgb(138, 138, 138);
+        direction: rtl;
+        text-align: right;
+        font-family: 'Marhey', sans-serif;
+        font-size: 10pt;
+    }
+
+    span,
+    u {
+        font-family: 'Marhey', sans-serif;
+        font-size: 9pt;
+        font-weight: 500;
+    }
+
+    .inputbox input:focus::placeholder {
+        color: transparent;
+
+    }
+
+    .inputbox input:focus {
+        padding-right: 15px;
+        /* مقدار دلخواه */
+    }
+
+    .inputbox i {
+        position: absolute;
+        left: 12px;
+        top: -2px;
+        transform: translateY(29%);
+        font-size: 17px;
+    }
+
+    #submit {
+        display: block;
+        margin: 0 auto;
+        font-family: 'Marhey', sans-serif;
+        font-size: 10pt;
+        box-shadow: 1px 1px 10px 1px #E8E2DA;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+}
+/* end responsive in mobile device */

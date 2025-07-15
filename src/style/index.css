@@ -1,0 +1,1073 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #D3DADC;
+    overflow-x: hidden;
+    /* prevent horizontal scroll */
+    direction: rtl;
+}
+
+/*start header */
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #D3DADC;
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 8px #bfc3c4;
+    padding: 1rem;
+    position: fixed;
+}
+
+/* change color the scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: #D3DADC;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #283239;
+    border-radius: 5px;
+    /* add some rounding */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* the icons */
+.icons-bar {
+    width: 380px;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* items are linked in header */
+.span-text {
+    width: 35%;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* items are linked in header */
+#itm1,
+#itm2,
+#itm3,
+#itm4 {
+    font-family: "Beiruti", sans-serif;
+    font-weight: 500;
+    font-size: 15pt;
+    position: relative;
+    cursor: pointer;
+}
+
+/* the stroke under the items */
+#itm1::after,
+#itm2::after,
+#itm3::after,
+#itm4::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -4px;
+    position: absolute;
+    transition: ease-in 700ms;
+    background: linear-gradient(to right, #455763, #a7aaaa);
+    border-radius: 20px;
+}
+
+/* the stroke under the items */
+#itm1:hover::after,
+#itm2:hover::after,
+#itm3:hover::after,
+#itm4:hover::after {
+    width: 100%;
+    transition: ease 700ms;
+    cursor: pointer;
+}
+
+/* for search */
+.search {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    border-radius: 30px;
+    background-color: #f6f6f6;
+    transition: box-shadow 0.25s;
+}
+
+/* for search input */
+.inp-search {
+    font-size: 17pt;
+    font-family: "Beiruti", sans-serif;
+    color: #333333;
+    border: none;
+    background-color: transparent;
+    width: 220px;
+    text-align: center;
+}
+
+.inp-search::placeholder,
+.search-icon {
+    font-size: 13pt;
+    color: #686868;
+}
+
+.search:focus-within {
+    box-shadow: 0 0 2px rgb(0, 0, 0, 0.75);
+}
+
+.inp-search:focus {
+    outline: none;
+}
+
+/* start for banner */
+.banner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+/* start the banner */
+#banner-famo {
+    width: 80%;
+    height: auto;
+
+}
+
+/* end the banner */
+#heading-title {
+    font-family: 'Marhey', sans-serif;
+    text-align: center;
+    font-size: 22pt;
+    margin-top: 50px;
+}
+
+/* icons gifts .. */
+.fav-icons {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+}
+
+/* for vase */
+.the-heading-vase {
+    font-family: 'Marhey', sans-serif;
+    text-align: center;
+    font-size: 22pt;
+    margin-top: 50px;
+    border-bottom: 2px solid #333333;
+    width: 80px;
+}
+
+.the-heading-vase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/* for candle */
+.the-heading-candle {
+    font-family: 'Marhey', sans-serif;
+    text-align: center;
+    font-size: 22pt;
+    margin-top: 50px;
+    border-bottom: 2px solid #333333;
+    width: 150px;
+
+}
+
+.the-candle-holder {
+    font-family: 'Marhey', sans-serif;
+    text-align: center;
+    font-size: 22pt;
+    margin-top: 50px;
+    border-bottom: 2px solid #333333;
+    width: 150px;
+    display: none;
+}
+
+.the-candlee-holder {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* start glass */
+.the-glass {
+    font-family: 'Marhey', sans-serif;
+    text-align: center;
+    font-size: 22pt;
+    margin-top: 50px;
+    border-bottom: 2px solid #333333;
+    width: 90px;
+    display: none;
+    margin-right: 20px;
+}
+
+.the-glass-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* end glass */
+/* start lamp */
+.the-lamp {
+    font-family: 'Marhey', sans-serif;
+    text-align: center;
+    font-size: 22pt;
+    margin-top: 50px;
+    border-bottom: 2px solid #333333;
+    width: 90px;
+    display: none;
+    margin-right: 20px;
+}
+
+.the-lamp-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* end lamp */
+/* start the first horizental scroll */
+.horizental-one {
+    margin-top: 50px;
+    direction: ltr;
+    padding: 10px;
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    animation: slideUp 0.5s;
+}
+
+/* end the first horizental scroll */
+/* the animation for slide up */
+@keyframes slideUp {
+    from {
+        transform: translateX(300%);
+        opacity: 0%;
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+/* start the second horizental scroll */
+.horizental-two {
+    margin-top: 50px;
+    direction: ltr;
+    padding: 10px;
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    display: none;
+    animation: slideUp 0.5s;
+}
+
+/* end the second horizental scroll */
+/* start the third horizental scroll */
+.horizental-three {
+    margin-top: 50px;
+    direction: ltr;
+    padding: 10px;
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    display: none;
+    animation: slideUp 0.5s;
+}
+
+/* end the third horizental scroll */
+/* start the fourth horizental scroll */
+.horizental-four {
+    margin-top: 50px;
+    direction: ltr;
+    padding: 10px;
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    display: none;
+    animation: slideUp 0.5s;
+}
+
+/* end the fourth horizental scroll */
+.product-card {
+    font-family: "Beiruti",
+        sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* start product detail */
+.product-detail {
+    direction: rtl;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* end product detail */
+/* start button */
+.btn-buy {
+    transition: 0.75s;
+}
+
+.btn-buy:hover {
+    transition: 0.5s;
+    transform: scale(1.03, 1.03);
+}
+
+/* end button */
+.total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.product-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --b: 1px;
+    /* border thickness */
+    --s: .42em;
+    /* size of the corner */
+    --color: #373B44;
+
+    padding: calc(.3em + var(--s)) calc(.4em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+        conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .2em;
+    font-size: 16px;
+
+    border: 0;
+
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+/* start the product meenu  */
+.menu-product {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    font-family: "Beiruti",
+        sans-serif;
+    font-weight: 600;
+    font-size: 17pt;
+    --b: 1px;
+    /* border thickness */
+    --s: .55em;
+    /* size of the corner */
+    --color: #373B44;
+
+    padding: calc(.5em + var(--s)) calc(.8em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+        conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .2em;
+
+    border: 0;
+
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.menu1,
+.menu2,
+.menu3,
+.menu4 {
+    position: relative;
+    cursor: pointer;
+}
+
+.menu1::after,
+.menu2::after,
+.menu3::after,
+.menu4::after {
+    content: '';
+    border-radius: 20px;
+    width: 0;
+    left: 0;
+    height: 4px;
+    transition: ease-in 600ms;
+    position: absolute;
+    background: linear-gradient(to right, #455763, #a7aaaa);
+    border-radius: 20px;
+    bottom: -4px;
+}
+
+.menu1:hover::after,
+.menu2:hover::after,
+.menu3:hover::after,
+.menu4:hover::after {
+    width: 100%;
+    transition: ease-in 600ms;
+}
+
+.menu1::before,
+.menu2::before,
+.menu3::before,
+.menu4::before {
+    content: '';
+    border-radius: 20px;
+    width: 0;
+    right: 0;
+    height: 4px;
+    transition: ease-in 600ms;
+    position: absolute;
+    background: linear-gradient(to right, #455763, #a7aaaa);
+    border-radius: 20px;
+    top: -1px;
+}
+
+.menu1:hover::before,
+.menu2:hover::before,
+.menu3:hover::before,
+.menu4:hover::before {
+    width: 100%;
+    transition: ease-in 600ms;
+}
+
+/* end the product meenu  */
+.just-collection {
+    margin-top: 70px;
+    font-family: 'Marhey', sans-serif;
+    text-align: center;
+    font-size: 25pt;
+    border-bottom: 2px solid #333333;
+    width: 250px;
+}
+
+.jst-clc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* start collection one  */
+/* Existing styles for .collection-one */
+/* Existing styles for .collection-one */
+.collection-one {
+    display: none;
+    /* Initially hidden */
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 100px;
+    text-align: right;
+    gap: 70px;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Existing styles for .collection-one-text */
+.collection-one-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border: black solid 2px;
+    margin-top: 50px;
+    text-align: right;
+    direction: rtl;
+    width: 50%;
+    height: auto;
+    padding: 3rem;
+    font-family: "Beiruti", sans-serif;
+    font-weight: 500;
+    font-size: 17pt;
+    direction: rtl;
+}
+
+#pic-clc-one {
+    width: 25%;
+}
+
+/* end collection one  */
+.collection-two {
+    display: none;
+    /* Initially hidden */
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 50px;
+    text-align: right;
+    gap: 70px;
+    width: 100%;
+    height: auto;
+}
+
+.slide-up-animation {
+    animation: slideUp 2s;
+}
+
+
+.collection-two-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border: black solid 2px;
+    margin-top: 50px;
+    text-align: right;
+    direction: rtl;
+    width: 50%;
+    height: auto;
+    padding: 3rem;
+    font-family: "Beiruti", sans-serif;
+    font-weight: 500;
+    font-size: 17pt;
+    direction: rtl;
+}
+
+#pic-clc-two {
+    width: 25%;
+}
+
+#heading {
+    font-size: 20pt;
+}
+
+/* the last banner */
+.banner-fix {
+    margin-top: 70px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/banner/home.png");
+    min-height: 500px;
+}
+
+/* start footer  */
+footer {
+    width: inherit;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: hsl(204, 18%, 33%); */
+    font-family: "Beiruti", sans-serif;
+    font-size: 13pt;
+}
+
+/* for logo and socialmedia */
+.all-logo-social-icon {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+/* end footer  */
+.slide-up-animation {
+    animation: slideUp 0.5s ease forwards;
+}
+
+/* start humburger menu */
+.menu-btn {
+    position: absolute;
+    top: 37px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-btn-hum {
+    width: 30px;
+    height: 5px;
+    background-color: #283239;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-btn.open .menu-btn-hum {
+    transform: rotate(45deg);
+}
+
+.menu-btn.open .menu-btn-hum::before,
+.menu-btn.open.menu-btn-hum::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.menu-btn-hum::before,
+.menu-btn-hum::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #283239;
+    transition: all 0.3s ease-in-out;
+}
+
+/* آیکن منو */
+.menu-btn {
+    display: none;
+}
+
+/* منو همبرگر */
+.menu {
+    display: none;
+}
+
+.menu-btn-hum::before {
+    top: -10px;
+}
+
+.menu-btn-hum::after {
+    top: 10px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 170px;
+    height: 100%;
+    background: #455763;
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.menu.open {
+    right: 0;
+
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 60px 0px;
+    margin: 0;
+}
+
+.menu li {
+    padding: 12px 20px;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+
+.menu li:last-child() {
+    border-bottom: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-family: "Beiruti", sans-serif;
+    font-weight: 500;
+    font-size: 15pt;
+}
+
+.menu a:hover {
+    color: white;
+}
+
+/* end humburger menu */
+/* start responsive */
+@media screen and (max-width:576px) {
+    .span-text {
+        display: none;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .search-r {
+        height: 50px;
+        width: 120%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 12px;
+        margin: 16px auto;
+        border-radius: 24px;
+        background-color: #f6f6f6;
+        box-sizing: border-box;
+        gap: 8px;
+        /* وسط‌چین کردن با جابجایی به راست */
+        transform: translateX(8%);
+    }
+
+    .inp-search-r {
+        width: 100%;
+        font-size: 11pt;
+        font-family: "Beiruti", sans-serif;
+        color: #333333;
+        border: none;
+        background-color: transparent;
+        text-align: right;
+        outline: none;
+        padding: 4px 8px;
+    }
+
+    .search-icon {
+        font-size: 18pt;
+        transform: translateX(8%);
+
+        color: #686868;
+    }
+
+    .inp-search::placeholder {
+        font-size: 13pt;
+        color: #686868;
+    }
+
+    /* the icons */
+    .icons-bar {
+        width: 380px;
+        height: inherit;
+        display: flex;
+        justify-content: end;
+        gap: 20px;
+        align-items: center;
+    }
+
+    /* آیکن منو */
+    .menu-btn {
+        display: block;
+        position: absolute;
+        top: 37px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 1000;
+
+    }
+
+    /* خطوط آیکن منو */
+    .menu-btn-hum {
+        width: 30px;
+        height: 5px;
+        background-color: #283239;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+    }
+
+    .menu-btn-hum::before,
+    .menu-btn-hum::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 5px;
+        background-color: #283239;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-btn-hum::before {
+        top: -10px;
+    }
+
+    .menu-btn-hum::after {
+        top: 10px;
+    }
+
+    /* زمانی که منو همبرگر باز است (آیکن به ضربدر تبدیل می‌شود) */
+    .menu-btn.open .menu-btn-hum {
+        background-color: transparent;
+    }
+
+    .menu-btn.open .menu-btn-hum::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .menu-btn.open .menu-btn-hum::after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .menu.open {
+        right: 0;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:768px) {
+    .span-text {
+        display: none;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .search-r {
+        height: 50px;
+        width: 120%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 12px;
+        margin: 16px auto;
+        border-radius: 24px;
+        background-color: #f6f6f6;
+        box-sizing: border-box;
+        gap: 8px;
+        /* وسط‌چین کردن با جابجایی به راست */
+        transform: translateX(8%);
+    }
+
+    .inp-search-r {
+        width: 100%;
+        font-size: 11pt;
+        font-family: "Beiruti", sans-serif;
+        color: #333333;
+        border: none;
+        background-color: transparent;
+        text-align: right;
+        outline: none;
+        padding: 4px 8px;
+    }
+
+    .search-icon {
+        font-size: 18pt;
+        transform: translateX(8%);
+
+        color: #686868;
+    }
+
+    .inp-search::placeholder {
+        font-size: 13pt;
+        color: #686868;
+    }
+
+    /* the icons */
+    .icons-bar {
+        width: 380px;
+        height: inherit;
+        display: flex;
+        justify-content: end;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        left: -300px;
+        width: 250px;
+        height: 100%;
+        background: #455763;
+        transition: all 0.3s ease-in-out;
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    /* آیکن منو */
+    .menu-btn {
+        display: block;
+        position: absolute;
+        top: 37px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 1000;
+
+    }
+
+    /* خطوط آیکن منو */
+    .menu-btn-hum {
+        width: 30px;
+        height: 5px;
+        background-color: #283239;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+    }
+
+    .menu-btn-hum::before,
+    .menu-btn-hum::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 5px;
+        background-color: #283239;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-btn-hum::before {
+        top: -10px;
+    }
+
+    .menu-btn-hum::after {
+        top: 10px;
+    }
+
+    /* زمانی که منو همبرگر باز است (آیکن به ضربدر تبدیل می‌شود) */
+    .menu-btn.open .menu-btn-hum {
+        background-color: transparent;
+    }
+
+    .menu-btn.open .menu-btn-hum::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .menu-btn.open .menu-btn-hum::after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .menu.open {
+        right: 0;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+    .span-text {
+        display: none;
+    }
+
+
+
+    .search-r {
+        display: none;
+    }
+
+
+
+
+    /* the icons */
+    .icons-bar {
+        width: 580px;
+        height: inherit;
+        display: flex;
+        justify-content: end;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        left: -300px;
+        width: 230px;
+        height: 100%;
+        background: #455763;
+        transition: all 0.3s ease-in-out;
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    /* آیکن منو */
+    .menu-btn {
+        display: block;
+        position: absolute;
+        top: 37px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 1000;
+
+    }
+
+    /* خطوط آیکن منو */
+    .menu-btn-hum {
+        width: 30px;
+        height: 5px;
+        background-color: #283239;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+    }
+
+    .menu-btn-hum::before,
+    .menu-btn-hum::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 5px;
+        background-color: #283239;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-btn-hum::before {
+        top: -10px;
+    }
+
+    .menu-btn-hum::after {
+        top: 10px;
+    }
+
+    /* زمانی که منو همبرگر باز است (آیکن به ضربدر تبدیل می‌شود) */
+    .menu-btn.open .menu-btn-hum {
+        background-color: transparent;
+    }
+
+    .menu-btn.open .menu-btn-hum::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .menu-btn.open .menu-btn-hum::after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .menu.open {
+        right: 0;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+/* end responsive */
