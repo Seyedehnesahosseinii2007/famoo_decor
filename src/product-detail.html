@@ -7,7 +7,7 @@
     <title>جزئیات محصول</title>
     <link rel="stylesheet" href="../src/dist/output.css">
     <!-- link to the css -->
-    <link rel="stylesheet" href="../src/style/index.css">
+    <link rel="stylesheet" href="../src/style/product-detail.css">
     <!-- icon search -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
@@ -26,6 +26,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap" rel="stylesheet">
     <!-- fav icon -->
     <link rel="icon" href="images/logo/1.jpg" type="image/x-icon" />
+    <!-- flowbite css -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -55,7 +57,7 @@
         </div>
         <!-- the items -->
         <div class="span-text"><span id="itm1">ارتباط با ما</span>
-            <span class="position-relative" id="itm2">خانه</span>
+            <span class="position-relative" id="itm2"><a href="../src/index.html">خانه</a></span>
             <span class="position-relative" id="itm3">محصولات</span>
             <span class="position-relative" id="itm4">بلاگ</span>
         </div>
@@ -80,7 +82,7 @@
             <input class="inp-search-r" type="search" placeholder="جست‌جوی کالای موردنظر">
         </div>
         <ul>
-            <li><a href="#">خانه</a></li>
+            <li><a href="../src/index.html">خانه</a></li>
             <li><a href="#">محصولات</a></li>
             <li><a href="#">بلاگ</a></li>
             <li><a href="#">ارتباط با ما</a></li>
@@ -88,8 +90,147 @@
     </nav>
 
 
-    <script src="../src/js/index.js"></script>
+    <div class="all-details-slider w-[90%] h-min flex justify-center items-center gap-20 mt-8 ">
+        <!-- start slider -->
+        <div class="just-carousel flex jcontent-center items-center  h-auto w-auto">
+            <div id="animation-carousel" class="relative w-[25rem]  h-[500px] mt-32 " data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="relative h-full overflow-hidden rounded-lg">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-200 ease-linear w-full h-full" data-carousel-item>
+                        <img src="../src/images/products/11.jpg" class="w-full h-full" alt=".hi">
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-200 ease-linear w-full h-full" data-carousel-item>
+                        <img src="../src/images/products/14.jpg" class="w-full h-full" alt="hello">
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-200 ease-linear w-full h-full" data-carousel-item="active">
+                        <img src="../src/images/products/23.jpg" class="w-full h-full" alt=".nesa">
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="hidden duration-200 ease-linear w-full h-full" data-carousel-item>
+                        <img src="../src/images/products/25.jpg" class="w-full h-full" alt="f">
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="hidden duration-200 ease-linear w-full h-full" data-carousel-item>
+                        <img src="../src/images/products/20.jpg" class="w-full h-full" alt="w">
+                    </div>
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 1 1 5l4 4" />
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button"
+                    class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+            <!-- end slider -->
 
+        </div>
+        <!-- product detail -->
+        <div class="basket-detail w-64 min-h-min flex  flex-col items-center gap-4 bg-green-300">
+            <h2 id="name"> گلدان سفالی</h2>
+            <h5 id="price-product">قیمت 2100000</h5>
+            <p class="content w-48 bg-blue-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eaque
+                blanditiis
+                asperiores,
+                quas labore dolore maxime assumenda? Nostrum eaque adipisci error! Repellendus dolore pariatur,
+                doloribus temporibus possimus ipsam explicabo. Similique!</p>
+            <button
+                class="btn-buy bg-[#455763]  text-white font-semibold py-2 w-[11rem] border border-gray-400 rounded shadow">
+                مشاهده محصول و خرید
+            </button>
+        </div>
+
+    </div>
+    <hr style="width: 100%; height: 3px; background-color:#455763 ; margin-top: 70px;">
+
+    <!-- start footer -->
+    <footer>
+        <!-- that section for logo and social icon -->
+        <!-- logo -->
+        <div class="all-logo-social-icon p-5">
+            <div class="logoandtext w-50 flex flex-col items-center justify-center p-2">
+                <div class="w-full flex justify-center h-full">
+                    <img class="w-40 h-20" src="images/logo/1.jpg" alt="logo">
+                </div>
+                <p class="mt-6">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nostrum a facilis corrupti blanditiis.
+                    Minima, dolore maxime <br>, officiis amet nobis, tenetur aliquam eligendi fuga
+                    esse cupiditate perspiciatis iste cumque assumenda tempora.
+
+                </p>
+            </div>
+            <!-- social media icons -->
+            <div class="socialicon-call-email h-full w-full flex flex-col justify-center items-center gap-8">
+                <strong class="text-xl">مارا در فضای مجازی دنبال کنید</strong>
+                <div class="icons w-full h-14 justify-center items-center flex gap-7">
+                    <!-- instagram -->
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30"
+                        height="30" viewBox="0 0 20 20" version="1.1">
+
+                        <title>instagram [#167]</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs>
+
+                        </defs>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)"
+                                fill="#000000">
+                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                    <path
+                                        d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792"
+                                        id="instagram-[#167]">
+
+                                    </path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <!-- whatsapp -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.50002 12C3.50002 7.30558 7.3056 3.5 12 3.5C16.6944 3.5 20.5 7.30558 20.5 12C20.5 16.6944 16.6944 20.5 12 20.5C10.3278 20.5 8.77127 20.0182 7.45798 19.1861C7.21357 19.0313 6.91408 18.9899 6.63684 19.0726L3.75769 19.9319L4.84173 17.3953C4.96986 17.0955 4.94379 16.7521 4.77187 16.4751C3.9657 15.176 3.50002 13.6439 3.50002 12ZM12 1.5C6.20103 1.5 1.50002 6.20101 1.50002 12C1.50002 13.8381 1.97316 15.5683 2.80465 17.0727L1.08047 21.107C0.928048 21.4637 0.99561 21.8763 1.25382 22.1657C1.51203 22.4552 1.91432 22.5692 2.28599 22.4582L6.78541 21.1155C8.32245 21.9965 10.1037 22.5 12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5ZM14.2925 14.1824L12.9783 15.1081C12.3628 14.7575 11.6823 14.2681 10.9997 13.5855C10.2901 12.8759 9.76402 12.1433 9.37612 11.4713L10.2113 10.7624C10.5697 10.4582 10.6678 9.94533 10.447 9.53028L9.38284 7.53028C9.23954 7.26097 8.98116 7.0718 8.68115 7.01654C8.38113 6.96129 8.07231 7.046 7.84247 7.24659L7.52696 7.52195C6.76823 8.18414 6.3195 9.2723 6.69141 10.3741C7.07698 11.5163 7.89983 13.314 9.58552 14.9997C11.3991 16.8133 13.2413 17.5275 14.3186 17.8049C15.1866 18.0283 16.008 17.7288 16.5868 17.2572L17.1783 16.7752C17.4313 16.5691 17.5678 16.2524 17.544 15.9269C17.5201 15.6014 17.3389 15.308 17.0585 15.1409L15.3802 14.1409C15.0412 13.939 14.6152 13.9552 14.2925 14.1824Z"
+                            fill="#000000" />
+                    </svg>
+                </div>
+                <strong class="email text-xl">example@gmail.com</strong>
+                <strong style="direction: ltr;" class="phonenumber text-xl">+9899999999</strong>
+            </div>
+
+        </div>
+        <!-- rules and top button -->
+        <hr style="width: 100%; height: 3px; background-color:#455763 ;">
+        <div class="rule-and-button w-full h-28 d-flex justify-center flex flex-row items-center gap-28">
+            <div class="text-xl font-semibold">حفظ حقوق و حق کپی رایت </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <script src="../src/js/index.js"></script>
+    <!-- flowbite css -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 
 </html>
