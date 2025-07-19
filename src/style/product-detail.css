@@ -1,0 +1,268 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #D3DADC;
+    overflow-x: hidden;
+    /* prevent horizontal scroll */
+    direction: rtl;
+}
+
+/*start header */
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #D3DADC;
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 8px #bfc3c4;
+    padding: 1rem;
+    position: fixed;
+}
+
+/* change color the scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: #D3DADC;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #283239;
+    border-radius: 5px;
+    /* add some rounding */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* the icons */
+.icons-bar {
+    width: 380px;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* items are linked in header */
+.span-text {
+    width: 35%;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* items are linked in header */
+#itm1,
+#itm2,
+#itm3,
+#itm4 {
+    font-family: "Beiruti", sans-serif;
+    font-weight: 500;
+    font-size: 15pt;
+    position: relative;
+    cursor: pointer;
+}
+
+/* the stroke under the items */
+#itm1::after,
+#itm2::after,
+#itm3::after,
+#itm4::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -4px;
+    position: absolute;
+    transition: ease-in 700ms;
+    background: linear-gradient(to right, #455763, #a7aaaa);
+    border-radius: 20px;
+}
+
+/* the stroke under the items */
+#itm1:hover::after,
+#itm2:hover::after,
+#itm3:hover::after,
+#itm4:hover::after {
+    width: 100%;
+    transition: ease 700ms;
+    cursor: pointer;
+}
+
+/* for search */
+.search {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    border-radius: 30px;
+    background-color: #f6f6f6;
+    transition: box-shadow 0.25s;
+}
+
+/* for search input */
+.inp-search {
+    font-size: 17pt;
+    font-family: "Beiruti", sans-serif;
+    color: #333333;
+    border: none;
+    background-color: transparent;
+    width: 220px;
+    text-align: center;
+}
+
+.inp-search::placeholder,
+.search-icon {
+    font-size: 13pt;
+    color: #686868;
+}
+
+.search:focus-within {
+    box-shadow: 0 0 2px rgb(0, 0, 0, 0.75);
+}
+
+.inp-search:focus {
+    outline: none;
+}
+/* start responsive */
+@media screen and (max-width:576px) {
+    .span-text {
+        display: none;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .search-r {
+        height: 50px;
+        width: 120%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 12px;
+        margin: 16px auto;
+        border-radius: 24px;
+        background-color: #f6f6f6;
+        box-sizing: border-box;
+        gap: 8px;
+        /* وسط‌چین کردن با جابجایی به راست */
+        transform: translateX(8%);
+    }
+
+    .inp-search-r {
+        width: 100%;
+        font-size: 11pt;
+        font-family: "Beiruti", sans-serif;
+        color: #333333;
+        border: none;
+        background-color: transparent;
+        text-align: right;
+        outline: none;
+        padding: 4px 8px;
+    }
+
+    .search-icon {
+        font-size: 18pt;
+        transform: translateX(8%);
+
+        color: #686868;
+    }
+
+    .inp-search::placeholder {
+        font-size: 13pt;
+        color: #686868;
+    }
+
+    /* the icons */
+    .icons-bar {
+        width: 380px;
+        height: inherit;
+        display: flex;
+        justify-content: end;
+        gap: 20px;
+        align-items: center;
+    }
+
+    /* آیکن منو */
+    .menu-btn {
+        display: block;
+        position: absolute;
+        top: 37px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 1000;
+
+    }
+
+    /* خطوط آیکن منو */
+    .menu-btn-hum {
+        width: 30px;
+        height: 5px;
+        background-color: #283239;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+    }
+
+    .menu-btn-hum::before,
+    .menu-btn-hum::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 5px;
+        background-color: #283239;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-btn-hum::before {
+        top: -10px;
+    }
+
+    .menu-btn-hum::after {
+        top: 10px;
+    }
+
+    /* زمانی که منو همبرگر باز است (آیکن به ضربدر تبدیل می‌شود) */
+    .menu-btn.open .menu-btn-hum {
+        background-color: transparent;
+    }
+
+    .menu-btn.open .menu-btn-hum::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .menu-btn.open .menu-btn-hum::after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+        .menu {
+            position: fixed;
+            top: 0;
+            left: -300px;
+            width: 220px;
+            height: 100%;
+            background: #455763;
+            transition: all 0.3s ease-in-out;
+            z-index: 999;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 30px;
+        }
+    .menu.open {
+        right: 0;
+        transition: all 0.3s ease-in-out;
+    }
+}

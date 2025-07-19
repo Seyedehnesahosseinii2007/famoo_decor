@@ -746,6 +746,21 @@ footer {
         transform: translateX(8%);
     }
 
+    .menu {
+        position: fixed;
+        top: 0;
+        left: -300px;
+        width: 220px;
+        height: 100%;
+        background: #455763;
+        transition: all 0.3s ease-in-out;
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px;
+    }
+
     .inp-search-r {
         width: 100%;
         font-size: 11pt;
@@ -836,6 +851,40 @@ footer {
     .menu.open {
         right: 0;
         transition: all 0.3s ease-in-out;
+    }
+
+    /* start the product meenu  */
+    .menu-product {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+        font-family: "Beiruti",
+            sans-serif;
+        font-weight: 600;
+        font-size: 17pt;
+        --b: 1px;
+        /* border thickness */
+        --s: .55em;
+        /* size of the corner */
+        --color: #373B44;
+
+        padding: calc(.5em + var(--s)) calc(.8em + var(--s));
+        color: var(--color);
+        --_p: var(--s);
+        background:
+            conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+        transition: .3s linear, color 0s, background-color 0s;
+        outline: var(--b) solid #0000;
+        outline-offset: .2em;
+
+        border: 0;
+
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
     }
 }
 

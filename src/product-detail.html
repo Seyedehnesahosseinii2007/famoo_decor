@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جزئیات محصول</title>
+    <link rel="stylesheet" href="../src/dist/output.css">
+    <!-- link to the css -->
+    <link rel="stylesheet" href="../src/style/index.css">
+    <!-- icon search -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&family=Marhey:wght@300..700&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <!-- font for heading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap" rel="stylesheet">
+    <!-- fav icon -->
+    <link rel="icon" href="images/logo/1.jpg" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- start header -->
+    <header>
+        <div class="icons-bar">
+            <!-- icon basket -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#555" class="bi bi-basket2 w-[27px]" viewBox="0 0 16 16">
+                <path
+                    d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0z" />
+                <path
+                    d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6z" />
+            </svg>
+            <!-- user icon -->
+            <a href="../src/sign up.html">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#555" class="bi bi-person-fill w-[27px]"
+                    viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                </svg></a>
+            <!-- search icon -->
+            <div class="search">
+                <span class="search-icon material-symbols-outlined">
+                    search
+                </span>
+                <input class="inp-search" type="search" placeholder="جست‌جوی کالای موردنظر">
+            </div>
+        </div>
+        <!-- the items -->
+        <div class="span-text"><span id="itm1">ارتباط با ما</span>
+            <span class="position-relative" id="itm2">خانه</span>
+            <span class="position-relative" id="itm3">محصولات</span>
+            <span class="position-relative" id="itm4">بلاگ</span>
+        </div>
+        <!-- it's the logo famo decor -->
+        <div class="logo">
+            <img class="w-40 h-20" src="../src/images/logo/1.jpg" alt="the logo">
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- دکمه منوی همبرگری -->
+    <div class="menu-btn" id="menuBtn">
+        <div class="menu-btn-hum"></div>
+    </div>
+    <!-- منوی کشویی -->
+    <!-- منوی کشویی -->
+    <nav class="menu" id="sideMenu">
+        <!-- سرچ موبایل -->
+        <div class="search-r" style="padding: 12px 0; border-bottom: 1px solid #fff;">
+            <span class="search-icon material-symbols-outlined">
+                search
+            </span>
+            <input class="inp-search-r" type="search" placeholder="جست‌جوی کالای موردنظر">
+        </div>
+        <ul>
+            <li><a href="#">خانه</a></li>
+            <li><a href="#">محصولات</a></li>
+            <li><a href="#">بلاگ</a></li>
+            <li><a href="#">ارتباط با ما</a></li>
+        </ul>
+    </nav>
+
+
+    <script src="../src/js/index.js"></script>
+
+</body>
+
+</html>
