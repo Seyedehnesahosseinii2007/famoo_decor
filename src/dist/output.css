@@ -607,12 +607,20 @@ video {
   margin-top: 1.5rem;
 }
 
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
 
 .block {
   display: block;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -661,6 +669,10 @@ video {
 
 .h-\[500px\] {
   height: 500px;
+}
+
+.h-\[600px\] {
+  height: 600px;
 }
 
 .h-auto {
@@ -713,6 +725,10 @@ video {
   width: 19rem;
 }
 
+.w-\[22rem\] {
+  width: 22rem;
+}
+
 .w-\[25rem\] {
   width: 25rem;
 }
@@ -738,10 +754,6 @@ video {
   width: min-content;
 }
 
-.w-\[\] {
-  width: ;
-}
-
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -758,8 +770,24 @@ video {
   flex-direction: column;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -814,12 +842,25 @@ video {
   border-radius: 0.375rem;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .border {
   border-width: 1px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-b-2 {
   border-bottom-width: 2px;
+}
+
+.border-\[\#FFCC99\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 204 153 / var(--tw-border-opacity, 1));
 }
 
 .border-black {
@@ -830,6 +871,11 @@ video {
 .border-gray-400 {
   --tw-border-opacity: 1;
   border-color: rgb(156 163 175 / var(--tw-border-opacity, 1));
+}
+
+.border-\[\#455763\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(69 87 99 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#455763\] {
@@ -873,6 +919,10 @@ video {
   padding-top: 0.75rem;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
 }
@@ -897,6 +947,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }
 
 .text-black {
@@ -987,32 +1041,6 @@ video {
 .group:focus .group-focus\:ring-white {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity, 1));
-}
-
-@media not all and (min-width: 768px) {
-  .max-md\:flex {
-    display: flex;
-  }
-
-  .max-md\:w-\[\] {
-    width: ;
-  }
-
-  .max-md\:w-\[8\] {
-    width: 8;
-  }
-
-  .max-md\:w-\[90\%\] {
-    width: 90%;
-  }
-
-  .max-md\:items-center {
-    align-items: center;
-  }
-
-  .max-md\:justify-center {
-    justify-content: center;
-  }
 }
 
 @media not all and (min-width: 640px) {

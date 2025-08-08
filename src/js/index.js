@@ -78,4 +78,26 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+// new collection
+
+document.addEventListener('DOMContentLoaded', function () {
+    const partOne = document.querySelector('.part-one-for-new-collection');
+    const partTwo = document.querySelector('.part-two-for-new-collection');
+
+    function handleScroll() {
+        const collectionSection = document.querySelector('.collection');
+        const collectionPosition = collectionSection.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.3;
+
+        if (collectionPosition < screenPosition) {
+            partOne.classList.remove('hidden');
+            partTwo.classList.remove('hidden');
+            partOne.classList.add('animate-slide-in-left');
+            partTwo.classList.add('animate-slide-in-right');
+            window.removeEventListener('scroll', handleScroll);
+        }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+});
 
