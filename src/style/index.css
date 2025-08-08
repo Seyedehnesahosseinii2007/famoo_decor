@@ -385,10 +385,11 @@ header {
 
 /* start the product meenu  */
 .menu-product {
-    width: 40%;
+    width: 60%;
     height: auto;
     display: flex;
-    justify-content: space-between;
+
+    gap: 20px;
     align-items: center;
     margin-top: 30px;
      font-family: 'IRAN Sans Regular', sans-serif;
@@ -398,22 +399,10 @@ header {
     /* border thickness */
     --s: .55em;
     /* size of the corner */
-    --color: #373B44;
 
     padding: calc(.5em + var(--s)) calc(.8em + var(--s));
-    color: var(--color);
-    --_p: var(--s);
-    background:
-        conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-    transition: .3s linear, color 0s, background-color 0s;
-    outline: var(--b) solid #0000;
-    outline-offset: .2em;
+ 
 
-    border: 0;
-
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
 }
 
 .menu1,
@@ -422,9 +411,20 @@ header {
 .menu4 {
     position: relative;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border-radius: 20px 20px 20px 20px;
+    width: 130px;
+    height: 50px;
+    background-color: #455763;
+    transition: 0.75s;
+    box-shadow:#455763 0px 5px 15px;
 }
 
-.menu1::after,
+/* .menu1::after,
 .menu2::after,
 .menu3::after,
 .menu4::after {
@@ -438,16 +438,16 @@ header {
     background: linear-gradient(to right, #455763, #a7aaaa);
     border-radius: 20px;
     bottom: -4px;
-}
+} */
 
-.menu1:hover::after,
-.menu2:hover::after,
-.menu3:hover::after,
-.menu4:hover::after {
-    width: 100%;
-    transition: ease-in 600ms;
+.menu1:hover,
+.menu2:hover,
+.menu3:hover,
+.menu4:hover {
+    transition: 0.5s;
+        transform: scale(1.03, 1.03);
 }
-
+/* 
 .menu1::before,
 .menu2::before,
 .menu3::before,
@@ -470,7 +470,7 @@ header {
 .menu4:hover::before {
     width: 100%;
     transition: ease-in 600ms;
-}
+} */
 
 /* end the product meenu  */
 .just-collection {
@@ -866,23 +866,9 @@ footer {
         --b: 1px;
         /* border thickness */
         --s: .55em;
-        /* size of the corner */
-        --color: #373B44;
-
+     
         padding: calc(.5em + var(--s)) calc(.8em + var(--s));
-        color: var(--color);
-        --_p: var(--s);
-        background:
-            conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-        transition: .3s linear, color 0s, background-color 0s;
-        outline: var(--b) solid #0000;
-        outline-offset: .2em;
-
-        border: 0;
-
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
+     
     }
 }
 
