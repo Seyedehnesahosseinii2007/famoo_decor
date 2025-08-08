@@ -20,7 +20,7 @@ header {
     box-shadow: 0px 2px 8px #bfc3c4;
     padding: 1rem;
     position: fixed;
-        z-index: 999;
+    z-index: 999;
 }
 
 /* change color the scrollbar*/
@@ -137,457 +137,6 @@ header {
     outline: none;
 }
 
-/* start for banner */
-.banner {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-}
-
-/* start the banner */
-#banner-famo {
-    width: 80%;
-    height: auto;
-
-}
-
-/* end the banner */
-#heading-title {
-    font-family: 'Marhey', sans-serif;
-    text-align: center;
-    font-size: 22pt;
-    margin-top: 50px;
-}
-
-/* icons gifts .. */
-.fav-icons {
-    width: 100%;
-    height: 150px;
-    display: flex;
-    justify-content: space-between;
-    padding: 50px;
-    align-items: center;
-}
-
-/* for vase */
-.the-heading-vase {
-    font-family: 'Marhey', sans-serif;
-    text-align: center;
-    font-size: 22pt;
-    margin-top: 50px;
-    border-bottom: 2px solid #333333;
-    width: 80px;
-}
-
-.the-heading-vase {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
-}
-
-/* for candle */
-.the-heading-candle {
-    font-family: 'Marhey', sans-serif;
-    text-align: center;
-    font-size: 22pt;
-    margin-top: 50px;
-    border-bottom: 2px solid #333333;
-    width: 150px;
-
-}
-
-.the-candle-holder {
-    font-family: 'Marhey', sans-serif;
-    text-align: center;
-    font-size: 22pt;
-    margin-top: 50px;
-    border-bottom: 2px solid #333333;
-    width: 150px;
-    display: none;
-}
-
-.the-candlee-holder {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 1rem;
-}
-
-/* start glass */
-.the-glass {
-    font-family: 'Marhey', sans-serif;
-    text-align: center;
-    font-size: 22pt;
-    margin-top: 50px;
-    border-bottom: 2px solid #333333;
-    width: 90px;
-    display: none;
-    margin-right: 20px;
-}
-
-.the-glass-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* end glass */
-/* start lamp */
-.the-lamp {
-    font-family: 'Marhey', sans-serif;
-    text-align: center;
-    font-size: 22pt;
-    margin-top: 50px;
-    border-bottom: 2px solid #333333;
-    width: 90px;
-    display: none;
-    margin-right: 20px;
-}
-
-.the-lamp-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* end lamp */
-/* start the first horizental scroll */
-.horizental-one {
-    margin-top: 50px;
-    direction: ltr;
-    padding: 10px;
-    display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    animation: slideUp 0.5s;
-}
-
-/* end the first horizental scroll */
-/* the animation for slide up */
-@keyframes slideUp {
-    from {
-        transform: translateX(300%);
-        opacity: 0%;
-    }
-
-    to {
-        transform: translateY(0%);
-    }
-}
-
-/* start the second horizental scroll */
-.horizental-two {
-    margin-top: 50px;
-    direction: ltr;
-    padding: 10px;
-    display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    display: none;
-    animation: slideUp 0.5s;
-}
-
-/* end the second horizental scroll */
-/* start the third horizental scroll */
-.horizental-three {
-    margin-top: 50px;
-    direction: ltr;
-    padding: 10px;
-    display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    display: none;
-    animation: slideUp 0.5s;
-}
-
-/* end the third horizental scroll */
-/* start the fourth horizental scroll */
-.horizental-four {
-    margin-top: 50px;
-    direction: ltr;
-    padding: 10px;
-    display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    display: none;
-    animation: slideUp 0.5s;
-}
-
-/* end the fourth horizental scroll */
-.product-card {
-    font-family: "Beiruti",
-        sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-}
-
-/* start product detail */
-.product-detail {
-    direction: rtl;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-/* end product detail */
-/* start button */
-.btn-buy {
-    transition: 0.75s;
-}
-
-.btn-buy:hover {
-    transition: 0.5s;
-    transform: scale(1.03, 1.03);
-}
-
-/* end button */
-.total {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.product-price {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    --b: 1px;
-    /* border thickness */
-    --s: .42em;
-    /* size of the corner */
-    --color: #373B44;
-
-    padding: calc(.3em + var(--s)) calc(.4em + var(--s));
-    color: var(--color);
-    --_p: var(--s);
-    background:
-        conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-    transition: .3s linear, color 0s, background-color 0s;
-    outline: var(--b) solid #0000;
-    outline-offset: .2em;
-    font-size: 16px;
-
-    border: 0;
-
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-}
-
-/* start the product meenu  */
-.menu-product {
-    width: 40%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
-    font-family: "Beiruti",
-        sans-serif;
-    font-weight: 600;
-    font-size: 17pt;
-    --b: 1px;
-    /* border thickness */
-    --s: .55em;
-    /* size of the corner */
-    --color: #373B44;
-
-    padding: calc(.5em + var(--s)) calc(.8em + var(--s));
-    color: var(--color);
-    --_p: var(--s);
-    background:
-        conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-    transition: .3s linear, color 0s, background-color 0s;
-    outline: var(--b) solid #0000;
-    outline-offset: .2em;
-
-    border: 0;
-
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-}
-
-.menu1,
-.menu2,
-.menu3,
-.menu4 {
-    position: relative;
-    cursor: pointer;
-}
-
-.menu1::after,
-.menu2::after,
-.menu3::after,
-.menu4::after {
-    content: '';
-    border-radius: 20px;
-    width: 0;
-    left: 0;
-    height: 4px;
-    transition: ease-in 600ms;
-    position: absolute;
-    background: linear-gradient(to right, #455763, #a7aaaa);
-    border-radius: 20px;
-    bottom: -4px;
-}
-
-.menu1:hover::after,
-.menu2:hover::after,
-.menu3:hover::after,
-.menu4:hover::after {
-    width: 100%;
-    transition: ease-in 600ms;
-}
-
-.menu1::before,
-.menu2::before,
-.menu3::before,
-.menu4::before {
-    content: '';
-    border-radius: 20px;
-    width: 0;
-    right: 0;
-    height: 4px;
-    transition: ease-in 600ms;
-    position: absolute;
-    background: linear-gradient(to right, #455763, #a7aaaa);
-    border-radius: 20px;
-    top: -1px;
-}
-
-.menu1:hover::before,
-.menu2:hover::before,
-.menu3:hover::before,
-.menu4:hover::before {
-    width: 100%;
-    transition: ease-in 600ms;
-}
-
-/* end the product meenu  */
-.just-collection {
-    margin-top: 70px;
-    font-family: 'Marhey', sans-serif;
-    text-align: center;
-    font-size: 25pt;
-    border-bottom: 2px solid #333333;
-    width: 250px;
-}
-
-.jst-clc {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* start collection one  */
-/* Existing styles for .collection-one */
-/* Existing styles for .collection-one */
-.collection-one {
-    display: none;
-    /* Initially hidden */
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 100px;
-    text-align: right;
-    gap: 70px;
-    width: 100%;
-    height: auto;
-}
-
-
-/* Existing styles for .collection-one-text */
-.collection-one-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-    border: black solid 2px;
-    margin-top: 50px;
-    text-align: right;
-    direction: rtl;
-    width: 50%;
-    height: auto;
-    padding: 3rem;
-    font-family: "Beiruti", sans-serif;
-    font-weight: 500;
-    font-size: 17pt;
-    direction: rtl;
-}
-
-#pic-clc-one {
-    width: 25%;
-}
-
-/* end collection one  */
-.collection-two {
-    display: none;
-    /* Initially hidden */
-    justify-content: center;
-    align-items: center;
-    flex-direction: row-reverse;
-    margin-top: 50px;
-    text-align: right;
-    gap: 70px;
-    width: 100%;
-    height: auto;
-}
-
-.slide-up-animation {
-    animation: slideUp 2s;
-}
-
-
-.collection-two-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-    border: black solid 2px;
-    margin-top: 50px;
-    text-align: right;
-    direction: rtl;
-    width: 50%;
-    height: auto;
-    padding: 3rem;
-    font-family: "Beiruti", sans-serif;
-    font-weight: 500;
-    font-size: 17pt;
-    direction: rtl;
-}
-
-#pic-clc-two {
-    width: 25%;
-}
-
-#heading {
-    font-size: 20pt;
-}
-
-/* the last banner */
-.banner-fix {
-    margin-top: 70px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../images/banner/home.png");
-    min-height: 500px;
-}
-
 /* start footer  */
 footer {
     width: inherit;
@@ -599,6 +148,7 @@ footer {
     /* background-color: hsl(204, 18%, 33%); */
     font-family: "Beiruti", sans-serif;
     font-size: 13pt;
+    margin-top: 30px;
 }
 
 /* for logo and socialmedia */
@@ -612,12 +162,13 @@ footer {
 
 }
 
-
-/* end footer  */
-.slide-up-animation {
-    animation: slideUp 0.5s ease forwards;
+#name {
+    font-family: 'Marhey', sans-serif;
+    text-align: center;
+    font-size: 20pt;
 }
 
+/* end footer  */
 /* start humburger menu */
 .menu-btn {
     position: absolute;
@@ -720,7 +271,6 @@ footer {
     color: white;
 }
 
-/* end humburger menu */
 /* start responsive */
 @media screen and (max-width:576px) {
     .span-text {
@@ -745,21 +295,6 @@ footer {
         gap: 8px;
         /* وسط‌چین کردن با جابجایی به راست */
         transform: translateX(8%);
-    }
-
-    .menu {
-        position: fixed;
-        top: 0;
-        left: -300px;
-        width: 220px;
-        height: 100%;
-        background: #455763;
-        transition: all 0.3s ease-in-out;
-        z-index: 999;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding: 30px;
     }
 
     .inp-search-r {
@@ -849,46 +384,45 @@ footer {
         top: 0;
     }
 
+    .menu {
+        position: fixed;
+        top: 0;
+        left: -300px;
+        width: 220px;
+        height: 100%;
+        background: #455763;
+        transition: all 0.3s ease-in-out;
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px;
+    }
+
     .menu.open {
         right: 0;
         transition: all 0.3s ease-in-out;
     }
 
-    /* start the product meenu  */
-    .menu-product {
+    /* start the details slider and .... */
+    .all-details-slider {
         width: 100%;
-        height: auto;
+        height: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        margin-top: 30px;
-        font-family: "Beiruti",
-            sans-serif;
-        font-weight: 600;
-        font-size: 17pt;
-        --b: 1px;
-        /* border thickness */
-        --s: .55em;
-        /* size of the corner */
-        --color: #373B44;
-
-        padding: calc(.5em + var(--s)) calc(.8em + var(--s));
-        color: var(--color);
-        --_p: var(--s);
-        background:
-            conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-        transition: .3s linear, color 0s, background-color 0s;
-        outline: var(--b) solid #0000;
-        outline-offset: .2em;
-
-        border: 0;
-
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
+        flex-direction: column;
+        padding: 20px;
+        margin-top: -30px;
     }
+
+    .basket-detail {
+        margin-top: -50px;
+    }
+
 }
 
+/* end the details slider and .... */
 @media screen and (min-width:577px) and (max-width:768px) {
     .span-text {
         display: none;
@@ -1020,6 +554,13 @@ footer {
         right: 0;
         transition: all 0.3s ease-in-out;
     }
+        .just-carousel {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+        }
 }
 
 @media screen and (min-width:769px) and (max-width:992px) {
@@ -1117,6 +658,14 @@ footer {
     .menu.open {
         right: 0;
         transition: all 0.3s ease-in-out;
+    }
+
+    .just-carousel {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
 }
 
