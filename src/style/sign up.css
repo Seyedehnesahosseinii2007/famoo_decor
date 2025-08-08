@@ -20,7 +20,7 @@ body {
 }
 
 h2 {
-    font-family: "Beiruti", sans-serif;
+    font-family: 'IRAN Sans Regular', sans-serif;
     font-weight: 700;
     font-size: 35pt;
 
@@ -62,14 +62,14 @@ h2 {
     color: rgb(138, 138, 138);
     direction: rtl;
     text-align: right;
-    font-family: 'Marhey', sans-serif;
+    font-family: 'IRAN Sans Regular', sans-serif;
 
     padding: 20px;
 }
 
 span,
 u {
-    font-family: 'Marhey', sans-serif;
+    font-family: 'IRAN Sans Regular', sans-serif;
     font-size: 13pt;
 }
 
@@ -101,7 +101,7 @@ form {
 #submit {
     display: block;
     margin: 0 auto;
-    font-family: 'Marhey', sans-serif;
+    font-family: 'IRAN Sans Regular', sans-serif;
     font-size: 13pt;
     box-shadow: 1px 1px 10px 1px #E8E2DA;
     cursor: pointer;
@@ -132,7 +132,7 @@ form {
     }
 
     h2 {
-        font-family: "Beiruti", sans-serif;
+        font-family: 'IRAN Sans Regular', sans-serif;
         font-weight: 700;
         font-size: 22pt;
     }
@@ -180,19 +180,19 @@ form {
         color: rgb(138, 138, 138);
         direction: rtl;
         text-align: right;
-        font-family: 'Marhey', sans-serif;
+        font-family: 'IRAN Sans Regular', sans-serif;
         font-size: 10pt;
     }
 
     span,
     u {
-        font-family: 'Marhey', sans-serif;
+        font-family: 'IRAN Sans Regular', sans-serif;
         font-size: 10pt;
     }
 
     .inputbox input:focus::placeholder {
         color: transparent;
-        
+
     }
 
     .inputbox input:focus {
@@ -211,7 +211,7 @@ form {
     #submit {
         display: block;
         margin: 0 auto;
-        font-family: 'Marhey', sans-serif;
+        font-family: 'IRAN Sans Regular', sans-serif;
         font-size: 10pt;
         box-shadow: 1px 1px 10px 1px #E8E2DA;
         cursor: pointer;

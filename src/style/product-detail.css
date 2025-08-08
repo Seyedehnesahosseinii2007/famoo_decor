@@ -68,7 +68,7 @@ header {
 #itm2,
 #itm3,
 #itm4 {
-    font-family: "Beiruti", sans-serif;
+    font-family: 'IRAN Sans Regular', sans-serif;
     font-weight: 500;
     font-size: 15pt;
     position: relative;
@@ -115,7 +115,7 @@ header {
 /* for search input */
 .inp-search {
     font-size: 17pt;
-    font-family: "Beiruti", sans-serif;
+    font-family: 'IRAN Sans Regular', sans-serif;
     color: #333333;
     border: none;
     background-color: transparent;
@@ -146,7 +146,7 @@ footer {
     align-items: center;
     flex-direction: column;
     /* background-color: hsl(204, 18%, 33%); */
-    font-family: "Beiruti", sans-serif;
+    font-family: 'IRAN Sans Regular', sans-serif;
     font-size: 13pt;
     margin-top: 30px;
 }
@@ -163,7 +163,7 @@ footer {
 }
 
 #name {
-    font-family: 'Marhey', sans-serif;
+    font-family: 'IRAN Sans Regular', sans-serif;
     text-align: center;
     font-size: 20pt;
 }
@@ -262,7 +262,7 @@ footer {
 .menu a {
     text-decoration: none;
     color: white;
-    font-family: "Beiruti", sans-serif;
+    font-family: 'IRAN Sans Regular', sans-serif;
     font-weight: 500;
     font-size: 15pt;
 }
@@ -300,7 +300,7 @@ footer {
     .inp-search-r {
         width: 100%;
         font-size: 11pt;
-        font-family: "Beiruti", sans-serif;
+        font-family: 'IRAN Sans Regular', sans-serif;
         color: #333333;
         border: none;
         background-color: transparent;
@@ -451,7 +451,7 @@ footer {
     .inp-search-r {
         width: 100%;
         font-size: 11pt;
-        font-family: "Beiruti", sans-serif;
+        font-family: 'IRAN Sans Regular', sans-serif;
         color: #333333;
         border: none;
         background-color: transparent;
@@ -554,13 +554,14 @@ footer {
         right: 0;
         transition: all 0.3s ease-in-out;
     }
-        .just-carousel {
-            width: 90%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-    
-        }
+
+    .just-carousel {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
 }
 
 @media screen and (min-width:769px) and (max-width:992px) {

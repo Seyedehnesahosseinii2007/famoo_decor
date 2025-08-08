@@ -68,7 +68,7 @@ header {
 #itm2,
 #itm3,
 #itm4 {
-    font-family: "Beiruti", sans-serif;
+      font-family: 'IRAN Sans Regular', sans-serif;
     font-weight: 500;
     font-size: 15pt;
     position: relative;
@@ -115,7 +115,7 @@ header {
 /* for search input */
 .inp-search {
     font-size: 17pt;
-    font-family: "Beiruti", sans-serif;
+      font-family: 'IRAN Sans Regular', sans-serif;
     color: #333333;
     border: none;
     background-color: transparent;
@@ -156,7 +156,7 @@ header {
 
 /* end the banner */
 #heading-title {
-    font-family: 'Marhey', sans-serif;
+      font-family: 'IRAN Sans Regular', sans-serif;
     text-align: center;
     font-size: 22pt;
     margin-top: 50px;
@@ -174,7 +174,7 @@ header {
 
 /* for vase */
 .the-heading-vase {
-    font-family: 'Marhey', sans-serif;
+      font-family: 'IRAN Sans Regular', sans-serif;
     text-align: center;
     font-size: 22pt;
     margin-top: 50px;
@@ -191,7 +191,7 @@ header {
 
 /* for candle */
 .the-heading-candle {
-    font-family: 'Marhey', sans-serif;
+      font-family: 'IRAN Sans Regular', sans-serif;
     text-align: center;
     font-size: 22pt;
     margin-top: 50px;
@@ -201,7 +201,7 @@ header {
 }
 
 .the-candle-holder {
-    font-family: 'Marhey', sans-serif;
+      font-family: 'IRAN Sans Regular', sans-serif;
     text-align: center;
     font-size: 22pt;
     margin-top: 50px;
@@ -219,7 +219,7 @@ header {
 
 /* start glass */
 .the-glass {
-    font-family: 'Marhey', sans-serif;
+      font-family: 'IRAN Sans Regular', sans-serif;
     text-align: center;
     font-size: 22pt;
     margin-top: 50px;
@@ -238,7 +238,7 @@ header {
 /* end glass */
 /* start lamp */
 .the-lamp {
-    font-family: 'Marhey', sans-serif;
+      font-family: 'IRAN Sans Regular', sans-serif;
     text-align: center;
     font-size: 22pt;
     margin-top: 50px;
@@ -319,8 +319,7 @@ header {
 
 /* end the fourth horizental scroll */
 .product-card {
-    font-family: "Beiruti",
-        sans-serif;
+     font-family: 'IRAN Sans Regular', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -392,8 +391,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
-    font-family: "Beiruti",
-        sans-serif;
+     font-family: 'IRAN Sans Regular', sans-serif;
     font-weight: 600;
     font-size: 17pt;
     --b: 1px;
@@ -477,7 +475,7 @@ header {
 /* end the product meenu  */
 .just-collection {
     margin-top: 70px;
-    font-family: 'Marhey', sans-serif;
+      font-family: 'IRAN Sans Regular', sans-serif;
     text-align: center;
     font-size: 25pt;
     border-bottom: 2px solid #333333;
@@ -521,7 +519,7 @@ header {
     width: 50%;
     height: auto;
     padding: 3rem;
-    font-family: "Beiruti", sans-serif;
+      font-family: 'IRAN Sans Regular', sans-serif;
     font-weight: 500;
     font-size: 17pt;
     direction: rtl;
@@ -563,7 +561,7 @@ header {
     width: 50%;
     height: auto;
     padding: 3rem;
-    font-family: "Beiruti", sans-serif;
+      font-family: 'IRAN Sans Regular', sans-serif;
     font-weight: 500;
     font-size: 17pt;
     direction: rtl;
@@ -597,7 +595,7 @@ footer {
     align-items: center;
     flex-direction: column;
     /* background-color: hsl(204, 18%, 33%); */
-    font-family: "Beiruti", sans-serif;
+      font-family: 'IRAN Sans Regular', sans-serif;
     font-size: 13pt;
 }
 
@@ -711,7 +709,7 @@ footer {
 .menu a {
     text-decoration: none;
     color: white;
-    font-family: "Beiruti", sans-serif;
+      font-family: 'IRAN Sans Regular', sans-serif;
     font-weight: 500;
     font-size: 15pt;
 }
@@ -765,7 +763,7 @@ footer {
     .inp-search-r {
         width: 100%;
         font-size: 11pt;
-        font-family: "Beiruti", sans-serif;
+          font-family: 'IRAN Sans Regular', sans-serif;
         color: #333333;
         border: none;
         background-color: transparent;
@@ -862,8 +860,7 @@ footer {
         justify-content: space-between;
         align-items: center;
         margin-top: 30px;
-        font-family: "Beiruti",
-            sans-serif;
+        font-family: 'IRAN Sans Regular', sans-serif;
         font-weight: 600;
         font-size: 17pt;
         --b: 1px;
@@ -917,7 +914,7 @@ footer {
     .inp-search-r {
         width: 100%;
         font-size: 11pt;
-        font-family: "Beiruti", sans-serif;
+          font-family: 'IRAN Sans Regular', sans-serif;
         color: #333333;
         border: none;
         background-color: transparent;
