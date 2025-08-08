@@ -1,3 +1,7 @@
+// start humburger menu
+
+
+
 "use strict";
 const vaseelement = document.getElementsByClassName("menu1");
 const menuBTN = document.querySelector('.menu-btn');
@@ -15,6 +19,9 @@ document.onclick = (event) => {
         menu.classList.remove('open');
     }
 };
+
+// end humburger menu
+
 document.addEventListener('DOMContentLoaded', function () {
     // آرایه تایتل‌ها و بخش‌های محصولات به ترتیب
     const headings = [
